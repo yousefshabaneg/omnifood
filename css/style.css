@@ -1,0 +1,14 @@
+:root {
+  --primary-color: #e67e22;
+  --primary-color-shade1: #cf711f;
+  --primary-color-shade2: #45260a;
+  --primary-color-tint1: #fdf2e9;
+  --primary-color-tint2: #fae5d3;
+  --primary-color-tint3: #eb984e;
+  --primary-color-tint3: #eb984e;
+
+  --grey-white: #767676;
+  --grey-fd: #6f6f6f;
+
+  --box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+}
