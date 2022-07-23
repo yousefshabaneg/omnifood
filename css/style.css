@@ -137,10 +137,92 @@
 }
 
 /****************************/
+/* FEATURED IN SECTION */
+/****************************/
+
+.section-featured {
+  padding: 4.8rem 0;
+}
+
+.heading-featured-in {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #888;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logos img {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
+  transition: all 0.3s;
+}
+
+.logos img:hover {
+  opacity: 70%;
+}
+
+/****************************/
 /* How It Work SECTION */
 /****************************/
 
 .section-how {
   padding: 9.6rem 0;
-  background-color: orangered;
+}
+
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.step-description {
+  font-size: 2rem;
+  line-height: 1.8;
+}
+
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.step-img-box::before,
+.step-img-box::after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  content: "";
+  border-radius: 50%;
+}
+
+.step-img-box::before {
+  z-index: -2;
+  width: 60%;
+  padding-bottom: 60%;
+  background-color: var(--primary-color-tint1);
+}
+
+.step-img-box::after {
+  z-index: -1;
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: var(--primary-color-tint2);
+}
+
+.step-img {
+  width: 35%;
 }

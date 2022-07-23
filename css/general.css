@@ -56,6 +56,21 @@ Medium: 11px
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
 
+:root {
+  --primary-color: #e67e22;
+  --primary-color-shade1: #cf711f;
+  --primary-color-shade2: #45260a;
+  --primary-color-tint1: #fdf2e9;
+  --primary-color-tint2: #fae5d3;
+  --primary-color-tint3: #eb984e;
+  --primary-color-tint3: #eb984e;
+
+  --grey-white: #767676;
+  --grey-fd: #6f6f6f;
+
+  --box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+}
+
 *,
 *::before,
 *::after {
@@ -87,7 +102,8 @@ body {
 
 .grid {
   display: grid;
-  gap: 9.6rem;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
 }
 
 .grid--2-cols {
@@ -106,12 +122,38 @@ body {
   align-items: center;
 }
 
-.heading-primary {
-  font-size: 5.2rem;
-  line-height: 1.05;
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
   color: #333;
   font-weight: bold;
   letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--primary-color-shade1);
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
   margin-bottom: 3.2rem;
 }
 
